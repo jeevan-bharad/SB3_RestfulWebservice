@@ -59,6 +59,7 @@ public class BookController {
 	public Book updateBook(@PathVariable("id") int id, @RequestBody Book b) {
 		this.service.updateBookByid(id, b);
 		return b;
+		//Added for main branch
 	}
 
 	@DeleteMapping("/book/{id}")
